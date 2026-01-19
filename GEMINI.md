@@ -6,8 +6,9 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 ## Technology Stack
 *   **Frontend:** HTML5, Tailwind CSS (via CDN), Google Fonts, Google Material Symbols.
 *   **Styles:** Externalized in `assets/styles.css`.
+*   **Scripts:** Shared logic in `assets/scripts.js`.
 *   **Issue Tracking:** [Beads](https://github.com/steveyegge/beads) (CLI tool: `bd`).
-*   **Architecture:** Static site with multiple pages (`index.html`, `contact.html`).
+*   **Architecture:** Static site with multiple pages (`index.html`, `heritage.html`, `packhouse.html`, `products.html`, `contact.html`).
 
 ## Key Files
 *   `index.html`: The main landing page, featuring sections for Hero, Stats, About Us, Mission & Vision, Certifications, Product Calendar, and Partnership.
@@ -18,6 +19,7 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 *   `DESIGN_SYSTEM.md`: Documentation of the visual style, color palette, and typography.
 *   `AGENTS.md`: **CRITICAL**. Specific instructions for AI agents regarding workflow, issue tracking, and git operations.
 *   `content.md`: Source of truth for website copy and business details.
+*   `Product Portfolio prompts.md`: Detailed specifications for the product portfolio page.
 *   `.beads/`: Directory for Beads configuration and issue database.
 
 ## Business Context (from `content.md`)
