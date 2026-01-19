@@ -11,6 +11,7 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 
 ## Key Files
 *   `index.html`: The main landing page, featuring sections for Hero, Stats, About Us, Mission & Vision, Certifications, Product Calendar, and Partnership.
+*   `heritage.html`: A dedicated page showcasing the company's 80-year timeline, generational narrative, and vision for sustainability.
 *   `contact.html`: A specialized B2B inquiry page with a detailed procurement form.
 *   `DESIGN_SYSTEM.md`: Documentation of the visual style, color palette, and typography.
 *   `AGENTS.md`: **CRITICAL**. Specific instructions for AI agents regarding workflow, issue tracking, and git operations.

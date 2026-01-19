@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Heritage | Nouranto Agriculture Export</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#153721",
+                        "accent": "#B4715F",
+                        "muted-gold": "#CFA979",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#141e18",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="assets/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300">
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-20">
+            <div class="flex items-center gap-3">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-10 w-auto">
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our Heritage</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Products</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Sustainability</a>
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Generational Narrative Hero -->
+    <section class="relative px-6 py-16 lg:px-20 lg:py-32 max-w-[1440px] mx-auto overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-sm">family_history</span>
+                A Legacy of Trust
+            </div>
+            <h1 class="serif-heading text-5xl lg:text-7xl font-bold text-primary dark:text-white leading-tight">
+                One Family. One Force. <br/><span class="text-accent italic">Generations of Growth.</span>
+            </h1>
+            <p class="text-xl text-primary/70 dark:text-white/70 leading-relaxed max-w-3xl mx-auto">
+                Our journey from local growers to international exporters was forged through resilience. Founded by Khaled El Meligy in 1988, Nouranto is more than a business—it's a family promise. Today, Ismail and Nouran El Meligy continue this legacy, blending deep-rooted values with modern innovation to serve our European partners with unwavering accountability.
+            </p>
+        </div>
+    </section>
+
+    <!-- 80-Year Timeline -->
+    <section class="py-24 bg-white dark:bg-white/5 border-y border-primary/5">
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+            <h2 class="serif-heading text-4xl font-bold mb-16 text-center">Our 80-Year Journey</h2>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-primary/10 dark:bg-white/10 hidden lg:block -translate-y-1/2"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8 relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative group">
+                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
+                        <div class="lg:pt-16 lg:text-center">
+                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">1940s</span>
+                            <h3 class="serif-heading text-2xl font-bold mb-2">The Roots</h3>
+                            <p class="text-sm text-primary/70 dark:text-white/70">Ancestral beginnings in the fertile Nile Delta. Cultivating the land with traditional wisdom and deep respect for nature.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative group">
+                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
+                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col">
+                            <p class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2">Khaled El Meligy establishes Nouranto, structuring the family business for growth and setting new standards for local quality.</p>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0">The Founding</h3>
+                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">1988</span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative group">
+                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
+                        <div class="lg:pt-16 lg:text-center">
+                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">2000s</span>
+                            <h3 class="serif-heading text-2xl font-bold mb-2">Global Reach</h3>
+                            <p class="text-sm text-primary/70 dark:text-white/70">Expansion into international markets. Achieving key certifications (Global GAP, BRC) to meet rigorous European standards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="relative group">
+                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
+                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col">
+                            <p class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2">Ismail and Nouran El Meligy lead the transition, honoring their father's legacy while driving innovation and sustainability for the future.</p>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0">New Era</h3>
+                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">2025+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision for Sustainability -->
+    <section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 relative">
+                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-cover bg-center shadow-2xl" style="background-image: url('https://images.unsplash.com/photo-1625246333195-58f2164438d7?auto=format&fit=crop&q=80&w=1000');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 text-white max-w-xs">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 text-accent">Our Commitment</p>
+                        <p class="text-xl font-serif">Preserving the land for generations to come.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-xs font-bold uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-sm">eco</span>
+                    Beyond Profit
+                </div>
+                <h2 class="serif-heading text-4xl lg:text-5xl font-bold">Clean Agriculture & <br/><span class="text-accent">Global Food Security.</span></h2>
+                <div class="space-y-6 text-lg text-primary/70 dark:text-white/70 leading-relaxed">
+                    <p>
+                        At Nouranto, our mission extends far beyond the bottom line. We believe that true leadership in agriculture means taking responsibility for the planet and the people we feed.
+                    </p>
+                    <p>
+                        <strong>Clean Agriculture:</strong> We are dedicated to sustainable farming practices that minimize environmental impact, optimize water usage, and ensure the health of our soil.
+                    </p>
+                    <p>
+                        <strong>Food Security:</strong> By maintaining a secure, controlled supply chain, we contribute to the stability of the global food system, ensuring that safe, nutritious produce reaches tables around the world, regardless of market volatility.
+                    </p>
+                </div>
+                <a href="contact.html" class="inline-flex items-center gap-2 text-accent font-bold hover:gap-4 transition-all group">
+                    Join Our Mission
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-20 dark:bg-black/40">
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-12 w-auto">
+                </div>
+                <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+                    Pioneering Egyptian agriculture exports since 1944. Committed to sustainable farming and global food
+                    security.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Navigation</h6>
+                <ul class="space-y-4 text-sm font-medium text-white/70">
+                    <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white transition-colors" href="heritage.html">Our Heritage</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Farm Operations</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Packing Facilities</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Export Logistics</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Headquarters</h6>
+                <address class="not-italic space-y-4 text-sm font-medium text-white/70">
+                    <p class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">location_on</span>
+                        11 El Gazayer Street,<br />
+                        Aswan Square, Mohandseen<br />
+                        Cairo, Egypt
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">call</span>
+                        +20 2 2736 1234
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">mail</span>
+                        info@nouranto.com
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Global Reach</h6>
+                <div class="rounded-xl overflow-hidden grayscale border border-white/10 opacity-50">
+                    <div class="h-32 bg-center bg-cover" data-alt="Simplified world map with export routes"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrTb84-seXEiswmKvJOAGQQrk_5V_Iwf-dfm29j0HC7nz3bOaFgyzwVbEmRuwxFNjbWu6yY5qv5gMbBRsmN28WYMazK4gOC1yofDwB3fJyPnY7G4Pal12B334QS_TPauCZVnqFR6rwnaADDFtX-cu-LQAJ0axYMmedHEu-NS0fZMh223gK4YEeFk78arpeD4BKWq4ps7n-3qYXXi6jP-fGq38N2nja9VkWmllZbPgtWqbQzxPZevEaiP41_RLYsgcWdX61Jo4UIBw');">
+                    </div>
+                </div>
+                <p class="text-[10px] text-white/30 mt-4 leading-tight uppercase tracking-widest font-bold">Shipping to
+                    24+ Countries across Europe &amp; MENA</p>
+            </div>
+        </div>
+        <div
+            class="mx-auto max-w-[1440px] px-6 lg:px-20 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+            <p>© 2024 Nouranto Export. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Trade</a>
+                <a href="#">Traceability Portal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
