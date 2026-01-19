@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="light dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Nouranto Agriculture Export</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#153721",
+                        "accent": "#B4715F",
+                        "muted-gold": "#CFA979",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#141e18",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="assets/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300">
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-20">
+            <div class="flex items-center gap-3">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-10 w-auto">
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Our Heritage</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Products</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Sustainability</a>
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="px-6 py-12 lg:px-20 lg:py-24 max-w-[1440px] mx-auto">
+        <div class="max-w-4xl mx-auto text-center space-y-6 mb-16">
+            <h1 class="serif-heading text-5xl lg:text-6xl font-bold text-primary dark:text-white">
+                Partner with <span class="text-accent italic">Heritage.</span>
+            </h1>
+            <p class="text-lg lg:text-xl text-primary/70 dark:text-white/70 font-medium leading-relaxed">
+                Connect with our commercial department to discuss global retail procurement, 
+                harvest schedules, and customized logistics solutions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <!-- Contact Info -->
+            <div class="lg:col-span-4 space-y-12">
+                <div class="space-y-6">
+                    <h3 class="serif-heading text-2xl font-bold">Cairo Headquarters</h3>
+                    <address class="not-italic space-y-4 text-primary/70 dark:text-white/70">
+                        <p class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-accent">location_on</span>
+                            3 Shagaret El Dor St.<br />
+                            Zamalek, Cairo, Egypt
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-accent">call</span>
+                            +20 2 2736 1234
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-accent">mail</span>
+                            trade@nouranto.com
+                        </p>
+                    </address>
+                </div>
+
+                <div class="p-8 bg-primary text-white rounded-[2rem] space-y-6">
+                    <h3 class="serif-heading text-xl font-bold text-muted-gold">Export Department</h3>
+                    <p class="text-sm text-white/80 leading-relaxed">
+                        Our specialized export team handles all documentation, compliance certificates (Global GAP, BRC), 
+                        and cold-chain logistics for UK, EU, and MENA markets.
+                    </p>
+                    <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/60">
+                        <span class="material-symbols-outlined text-sm">schedule</span>
+                        Available 08:00 - 18:00 (GMT+2)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-8">
+                <form action="#" class="bg-white dark:bg-white/5 p-8 lg:p-12 rounded-[2.5rem] shadow-xl border border-primary/5 space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label for="name" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label for="product" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Product of Interest</label>
+                            <select id="product" name="product"
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                                <option value="">Select a product</option>
+                                <option value="grapes">Table Grapes</option>
+                                <option value="strawberries">Strawberries</option>
+                                <option value="spring-onions">Spring Onions</option>
+                                <option value="green-peas">Green Peas</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="port" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Destination Port</label>
+                            <input type="text" id="port" name="port" placeholder="e.g. Felixstowe, Rotterdam"
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label for="volume" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Volume Required (Tons/Containers)</label>
+                            <input type="text" id="volume" name="volume"
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="subject" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-accent text-white py-5 rounded-2xl text-xl font-bold hover:bg-primary transition-all shadow-xl hover:-translate-y-1">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-20 dark:bg-black/40">
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-12 w-auto">
+                </div>
+                <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+                    Pioneering Egyptian agriculture exports since 1944. Committed to sustainable farming and global food
+                    security.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Navigation</h6>
+                <ul class="space-y-4 text-sm font-medium text-white/70">
+                    <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Our Heritage</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Farm Operations</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Packing Facilities</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Export Logistics</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Headquarters</h6>
+                <address class="not-italic space-y-4 text-sm font-medium text-white/70">
+                    <p class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">location_on</span>
+                        3 Shagaret El Dor St.<br />
+                        Zamalek, Cairo<br />
+                        Egypt
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">call</span>
+                        +20 2 2736 1234
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">mail</span>
+                        trade@nouranto.com
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Global Reach</h6>
+                <div class="rounded-xl overflow-hidden grayscale border border-white/10 opacity-50">
+                    <div class="h-32 bg-center bg-cover" data-alt="Simplified world map with export routes"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrTb84-seXEiswmKvJOAGQQrk_5V_Iwf-dfm29j0HC7nz3bOaFgyzwVbEmRuwxFNjbWu6yY5qv5gMbBRsmN28WYMazK4gOC1yofDwB3fJyPnY7G4Pal12B334QS_TPauCZVnqFR6rwnaADDFtX-cu-LQAJ0axYMmedHEu-NS0fZMh223gK4YEeFk78arpeD4BKWq4ps7n-3qYXXi6jP-fGq38N2nja9VkWmllZbPgtWqbQzxPZevEaiP41_RLYsgcWdX61Jo4UIBw');">
+                    </div>
+                </div>
+                <p class="text-[10px] text-white/30 mt-4 leading-tight uppercase tracking-widest font-bold">Shipping to
+                    24+ Countries across Europe &amp; MENA</p>
+            </div>
+        </div>
+        <div
+            class="mx-auto max-w-[1440px] px-6 lg:px-20 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+            <p>© 2024 Nouranto Export. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Trade</a>
+                <a href="#">Traceability Portal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
