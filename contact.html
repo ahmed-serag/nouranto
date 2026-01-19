@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="light dark" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -34,24 +35,50 @@
     </script>
     <link href="assets/styles.css" rel="stylesheet" />
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300">
     <!-- Sticky Header -->
     <header
         class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
-        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-20">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-3 lg:px-20 lg:py-4">
             <div class="flex items-center gap-3">
                 <a href="index.html">
                     <img src="assets/logo.svg" alt="Nouranto Logo" class="h-10 w-auto">
                 </a>
             </div>
+
+            <!-- Desktop Nav -->
             <nav class="hidden lg:flex items-center gap-10">
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our Heritage</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our
+                    Heritage</a>
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Farms</a>
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Products</a>
-                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Sustainability</a>
+
                 <a href="contact.html"
                     class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary dark:text-white" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-primary/10 dark:border-white/10 p-6 flex flex-col gap-6 shadow-2xl lg:hidden">
+            <nav class="flex flex-col gap-4 text-center">
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="heritage.html">Our
+                    Heritage</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Products</a>
+
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary mt-2">
                     Contact Us
                 </a>
             </nav>
@@ -65,7 +92,7 @@
                 Partner with <span class="text-accent italic">Heritage.</span>
             </h1>
             <p class="text-lg lg:text-xl text-primary/70 dark:text-white/70 font-medium leading-relaxed">
-                Connect with our commercial department to discuss global retail procurement, 
+                Connect with our commercial department to discuss global retail procurement,
                 harvest schedules, and customized logistics solutions.
             </p>
         </div>
@@ -92,7 +119,8 @@
                 <div class="p-8 bg-primary text-white rounded-[2rem] space-y-6">
                     <h3 class="serif-heading text-xl font-bold text-muted-gold">Export Department</h3>
                     <p class="text-sm text-white/80 leading-relaxed">
-                        Our specialized export team handles all documentation, compliance certificates (Global GAP, BRC), 
+                        Our specialized export team handles all documentation, compliance certificates (Global GAP,
+                        BRC),
                         and cold-chain logistics for UK, EU, and MENA markets.
                     </p>
                     <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/60">
@@ -104,15 +132,20 @@
 
             <!-- Contact Form -->
             <div class="lg:col-span-8">
-                <form action="#" class="bg-white dark:bg-white/5 p-8 lg:p-12 rounded-[2.5rem] shadow-xl border border-primary/5 space-y-8">
+                <form action="#"
+                    class="bg-white dark:bg-white/5 p-8 lg:p-12 rounded-[2.5rem] shadow-xl border border-primary/5 space-y-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="space-y-2">
-                            <label for="name" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Full Name</label>
+                            <label for="name"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Full
+                                Name</label>
                             <input type="text" id="name" name="name" required
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                         </div>
                         <div class="space-y-2">
-                            <label for="email" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Email Address</label>
+                            <label for="email"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Email
+                                Address</label>
                             <input type="email" id="email" name="email" required
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                         </div>
@@ -120,7 +153,9 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="space-y-2">
-                            <label for="product" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Product of Interest</label>
+                            <label for="product"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Product
+                                of Interest</label>
                             <select id="product" name="product"
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                                 <option value="">Select a product</option>
@@ -132,7 +167,9 @@
                             </select>
                         </div>
                         <div class="space-y-2">
-                            <label for="port" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Destination Port</label>
+                            <label for="port"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Destination
+                                Port</label>
                             <input type="text" id="port" name="port" placeholder="e.g. Felixstowe, Rotterdam"
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                         </div>
@@ -140,19 +177,23 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="space-y-2">
-                            <label for="volume" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Volume Required (Tons/Containers)</label>
+                            <label for="volume"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Volume
+                                Required (Tons/Containers)</label>
                             <input type="text" id="volume" name="volume"
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                         </div>
                         <div class="space-y-2">
-                            <label for="subject" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Subject</label>
+                            <label for="subject"
+                                class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Subject</label>
                             <input type="text" id="subject" name="subject"
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                         </div>
                     </div>
 
                     <div class="space-y-2">
-                        <label for="message" class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Message</label>
+                        <label for="message"
+                            class="text-sm font-bold uppercase tracking-wider text-primary/60 dark:text-white/60">Message</label>
                         <textarea id="message" name="message" rows="6" required
                             class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all"></textarea>
                     </div>
@@ -196,7 +237,7 @@
                     <li><a class="hover:text-white transition-colors" href="#">Farm Operations</a></li>
                     <li><a class="hover:text-white transition-colors" href="#">Packing Facilities</a></li>
                     <li><a class="hover:text-white transition-colors" href="#">Export Logistics</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Sustainability</a></li>
+
                 </ul>
             </div>
             <div>
@@ -235,5 +276,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuBtn.querySelector('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.textContent = 'menu';
+                // wrapper.style.overflow = 'auto'; // allow scroll
+            } else {
+                menuIcon.textContent = 'close';
+                // wrapper.style.overflow = 'hidden'; // block scroll
+            }
+        });
+    </script>
 </body>
+
 </html>
