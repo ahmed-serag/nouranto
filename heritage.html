@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="light dark" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -34,24 +35,50 @@
     </script>
     <link href="assets/styles.css" rel="stylesheet" />
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300">
     <!-- Sticky Header -->
     <header
         class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
-        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 lg:px-20">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-3 lg:px-20 lg:py-4">
             <div class="flex items-center gap-3">
                 <a href="index.html">
                     <img src="assets/logo.svg" alt="Nouranto Logo" class="h-10 w-auto">
                 </a>
             </div>
+
+            <!-- Desktop Nav -->
             <nav class="hidden lg:flex items-center gap-10">
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our Heritage</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our
+                    Heritage</a>
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Farms</a>
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Products</a>
                 <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Sustainability</a>
                 <a href="contact.html"
                     class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary dark:text-white" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-primary/10 dark:border-white/10 p-6 flex flex-col gap-6 shadow-2xl lg:hidden">
+            <nav class="flex flex-col gap-4 text-center">
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="heritage.html">Our
+                    Heritage</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Products</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Sustainability</a>
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary mt-2">
                     Contact Us
                 </a>
             </nav>
@@ -61,15 +88,19 @@
     <!-- Generational Narrative Hero -->
     <section class="relative px-6 py-16 lg:px-20 lg:py-32 max-w-[1440px] mx-auto overflow-hidden">
         <div class="max-w-4xl mx-auto text-center space-y-8">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider">
                 <span class="material-symbols-outlined text-sm">family_history</span>
                 A Legacy of Trust
             </div>
             <h1 class="serif-heading text-5xl lg:text-7xl font-bold text-primary dark:text-white leading-tight">
-                One Family. One Force. <br/><span class="text-accent italic">Generations of Growth.</span>
+                One Family. One Force. <br /><span class="text-accent italic">Generations of Growth.</span>
             </h1>
             <p class="text-xl text-primary/70 dark:text-white/70 leading-relaxed max-w-3xl mx-auto">
-                Our journey from local growers to international exporters was forged through resilience. Founded by Khaled El Meligy in 1988, Nouranto is more than a business—it's a family promise. Today, Ismail and Nouran El Meligy continue this legacy, blending deep-rooted values with modern innovation to serve our European partners with unwavering accountability.
+                Our journey from local growers to international exporters was forged through resilience. Founded by
+                Khaled El Meligy in 1988, Nouranto is more than a business—it's a family promise. Today, Ismail and
+                Nouran El Meligy continue this legacy, blending deep-rooted values with modern innovation to serve our
+                European partners with unwavering accountability.
             </p>
         </div>
     </section>
@@ -78,49 +109,75 @@
     <section class="py-24 bg-white dark:bg-white/5 border-y border-primary/5">
         <div class="mx-auto max-w-[1440px] px-6 lg:px-20">
             <h2 class="serif-heading text-4xl font-bold mb-16 text-center">Our 80-Year Journey</h2>
-            
+
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-primary/10 dark:bg-white/10 hidden lg:block -translate-y-1/2"></div>
-                
+                <div
+                    class="absolute top-1/2 left-0 w-full h-0.5 bg-primary/10 dark:bg-white/10 hidden lg:block -translate-y-1/2">
+                </div>
+
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8 relative">
                     <!-- Timeline Item 1 -->
                     <div class="relative group">
-                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
-                        <div class="lg:pt-16 lg:text-center">
-                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">1940s</span>
-                            <h3 class="serif-heading text-2xl font-bold mb-2">The Roots</h3>
-                            <p class="text-sm text-primary/70 dark:text-white/70">Ancestral beginnings in the fertile Nile Delta. Cultivating the land with traditional wisdom and deep respect for nature.</p>
+                        <div
+                            class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0">
+                        </div>
+                        <div class="lg:pt-16 lg:text-center relative z-20">
+                            <span
+                                class="text-4xl lg:text-6xl font-bold text-muted-gold/10 lg:text-muted-gold/20 absolute -top-6 lg:-top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10 select-none">1940s</span>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 pt-2">The Roots</h3>
+                            <p
+                                class="text-sm text-primary/70 dark:text-white/70 relative z-20 bg-white/80 dark:bg-transparent lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none">
+                                Ancestral beginnings in the fertile Nile Delta. Cultivating the land with traditional
+                                wisdom and deep respect for nature.</p>
                         </div>
                     </div>
 
                     <!-- Timeline Item 2 -->
                     <div class="relative group">
-                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
-                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col">
-                            <p class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2">Khaled El Meligy establishes Nouranto, structuring the family business for growth and setting new standards for local quality.</p>
-                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0">The Founding</h3>
-                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">1988</span>
+                        <div
+                            class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0">
+                        </div>
+                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col relative z-20">
+                            <p
+                                class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2 relative z-20 bg-white/80 dark:bg-transparent lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none">
+                                Khaled El Meligy establishes Nouranto, structuring the family business for growth and
+                                setting new standards for local quality.</p>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0 pt-2 lg:pt-0">The Founding</h3>
+                            <span
+                                class="text-4xl lg:text-6xl font-bold text-muted-gold/10 lg:text-muted-gold/20 absolute -top-6 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10 select-none">1988</span>
                         </div>
                     </div>
 
                     <!-- Timeline Item 3 -->
                     <div class="relative group">
-                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
-                        <div class="lg:pt-16 lg:text-center">
-                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">2000s</span>
-                            <h3 class="serif-heading text-2xl font-bold mb-2">Global Reach</h3>
-                            <p class="text-sm text-primary/70 dark:text-white/70">Expansion into international markets. Achieving key certifications (Global GAP, BRC) to meet rigorous European standards.</p>
+                        <div
+                            class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0">
+                        </div>
+                        <div class="lg:pt-16 lg:text-center relative z-20">
+                            <span
+                                class="text-4xl lg:text-6xl font-bold text-muted-gold/10 lg:text-muted-gold/20 absolute -top-6 lg:-top-8 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10 select-none">2000s</span>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 pt-2">Global Reach</h3>
+                            <p
+                                class="text-sm text-primary/70 dark:text-white/70 relative z-20 bg-white/80 dark:bg-transparent lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none">
+                                Expansion into international markets. Achieving key certifications (Global GAP, BRC) to
+                                meet rigorous European standards.</p>
                         </div>
                     </div>
 
                     <!-- Timeline Item 4 -->
                     <div class="relative group">
-                        <div class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0"></div>
-                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col">
-                            <p class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2">Ismail and Nouran El Meligy lead the transition, honoring their father's legacy while driving innovation and sustainability for the future.</p>
-                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0">New Era</h3>
-                            <span class="text-6xl font-bold text-muted-gold/20 absolute -top-8 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10">2025+</span>
+                        <div
+                            class="lg:absolute top-1/2 left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-background-dark z-10 mb-4 lg:mb-0">
+                        </div>
+                        <div class="lg:pb-16 lg:text-center flex flex-col-reverse lg:flex-col relative z-20">
+                            <p
+                                class="text-sm text-primary/70 dark:text-white/70 mt-2 lg:mt-0 lg:mb-2 relative z-20 bg-white/80 dark:bg-transparent lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none">
+                                Ismail and Nouran El Meligy lead the transition, honoring their father's legacy while
+                                driving innovation and sustainability for the future.</p>
+                            <h3 class="serif-heading text-2xl font-bold mb-2 lg:mb-0 pt-2 lg:pt-0">New Era</h3>
+                            <span
+                                class="text-4xl lg:text-6xl font-bold text-muted-gold/10 lg:text-muted-gold/20 absolute -top-6 lg:top-auto lg:-bottom-12 left-0 lg:left-1/2 lg:-translate-x-1/2 -z-10 select-none">2025+</span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +189,8 @@
     <section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1 relative">
-                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-cover bg-center shadow-2xl" style="background-image: url('https://images.unsplash.com/photo-1625246333195-58f2164438d7?auto=format&fit=crop&q=80&w=1000');">
+                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-cover bg-center shadow-2xl"
+                    style="background-image: url('https://images.unsplash.com/photo-1625246333195-58f2164438d7?auto=format&fit=crop&q=80&w=1000');">
                     <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                     <div class="absolute bottom-8 left-8 text-white max-w-xs">
                         <p class="text-sm font-bold uppercase tracking-widest mb-2 text-accent">Our Commitment</p>
@@ -141,23 +199,30 @@
                 </div>
             </div>
             <div class="order-1 lg:order-2 space-y-8">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-xs font-bold uppercase tracking-wider">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-xs font-bold uppercase tracking-wider">
                     <span class="material-symbols-outlined text-sm">eco</span>
                     Beyond Profit
                 </div>
-                <h2 class="serif-heading text-4xl lg:text-5xl font-bold">Clean Agriculture & <br/><span class="text-accent">Global Food Security.</span></h2>
+                <h2 class="serif-heading text-4xl lg:text-5xl font-bold">Clean Agriculture & <br /><span
+                        class="text-accent">Global Food Security.</span></h2>
                 <div class="space-y-6 text-lg text-primary/70 dark:text-white/70 leading-relaxed">
                     <p>
-                        At Nouranto, our mission extends far beyond the bottom line. We believe that true leadership in agriculture means taking responsibility for the planet and the people we feed.
+                        At Nouranto, our mission extends far beyond the bottom line. We believe that true leadership in
+                        agriculture means taking responsibility for the planet and the people we feed.
                     </p>
                     <p>
-                        <strong>Clean Agriculture:</strong> We are dedicated to sustainable farming practices that minimize environmental impact, optimize water usage, and ensure the health of our soil.
+                        <strong>Clean Agriculture:</strong> We are dedicated to sustainable farming practices that
+                        minimize environmental impact, optimize water usage, and ensure the health of our soil.
                     </p>
                     <p>
-                        <strong>Food Security:</strong> By maintaining a secure, controlled supply chain, we contribute to the stability of the global food system, ensuring that safe, nutritious produce reaches tables around the world, regardless of market volatility.
+                        <strong>Food Security:</strong> By maintaining a secure, controlled supply chain, we contribute
+                        to the stability of the global food system, ensuring that safe, nutritious produce reaches
+                        tables around the world, regardless of market volatility.
                     </p>
                 </div>
-                <a href="contact.html" class="inline-flex items-center gap-2 text-accent font-bold hover:gap-4 transition-all group">
+                <a href="contact.html"
+                    class="inline-flex items-center gap-2 text-accent font-bold hover:gap-4 transition-all group">
                     Join Our Mission
                     <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
@@ -231,12 +296,32 @@
         <div
             class="mx-auto max-w-[1440px] px-6 lg:px-20 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
             <p>© 2024 Nouranto Export. All Rights Reserved.</p>
-            <div class="flex gap-8">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Trade</a>
-                <a href="#">Traceability Portal</a>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                <a href="#" class="py-2 md:py-0">Privacy Policy</a>
+                <a href="#" class="py-2 md:py-0">Terms of Trade</a>
+                <a href="#" class="py-2 md:py-0">Traceability Portal</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuBtn.querySelector('span');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.textContent = 'menu';
+                // wrapper.style.overflow = 'auto'; // allow scroll
+            } else {
+                menuIcon.textContent = 'close';
+                // wrapper.style.overflow = 'hidden'; // block scroll
+            }
+        });
+    </script>
 </body>
+
 </html>
