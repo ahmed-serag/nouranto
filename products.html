@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="light dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Product Portfolio & Crop Calendar | Nouranto Agriculture Export</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#153721",
+                        "accent": "#B4715F",
+                        "muted-gold": "#CFA979",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#141e18",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="assets/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300">
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-3 lg:px-20 lg:py-4">
+            <div class="flex items-center gap-3">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-10 w-auto">
+                </a>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="heritage.html">Our Heritage</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="packhouse.html">Packhouse</a>
+                <a class="text-sm font-semibold hover:text-accent transition-colors" href="products.html">Products</a>
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary dark:text-white" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-primary/10 dark:border-white/10 p-6 flex flex-col gap-6 shadow-2xl lg:hidden">
+            <nav class="flex flex-col gap-4 text-center">
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="heritage.html">Our Heritage</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="#">Farms</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="packhouse.html">Packhouse</a>
+                <a class="text-lg font-semibold hover:text-accent transition-colors" href="products.html">Products</a>
+                <a href="contact.html"
+                    class="bg-primary text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-primary/90 transition-all dark:bg-white dark:text-primary mt-2">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="relative px-6 py-16 lg:px-20 lg:py-32 max-w-[1440px] mx-auto overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-sm">nutrition</span>
+                Nature's Best
+            </div>
+            <h1 class="serif-heading text-5xl lg:text-7xl font-bold text-primary dark:text-white leading-tight">
+                Seasonal Excellence <br/><span class="text-accent italic">Year-Round.</span>
+            </h1>
+            <p class="text-xl text-primary/70 dark:text-white/70 leading-relaxed max-w-3xl mx-auto">
+                Explore our premium portfolio of Egyptian produce. From the sweetness of our grapes to the crisp snap of our peas, every variety is chosen for its superior flavor and resilience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Crop Calendar -->
+    <section class="py-24 bg-white dark:bg-white/5 border-y border-primary/5">
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="serif-heading text-4xl font-bold">Crop Calendar</h2>
+                <p class="text-primary/60 dark:text-white/60 max-w-2xl mx-auto">
+                    Plan your procurement with our harvest schedule.
+                </p>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="overflow-x-auto rounded-3xl shadow-xl border border-primary/5 bg-white dark:bg-background-dark">
+                <table class="w-full text-center">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-bold uppercase tracking-wider sticky left-0 bg-primary z-10">Crop</th>
+                            <th class="px-2 py-4 text-xs font-bold">Jan</th>
+                            <th class="px-2 py-4 text-xs font-bold">Feb</th>
+                            <th class="px-2 py-4 text-xs font-bold">Mar</th>
+                            <th class="px-2 py-4 text-xs font-bold">Apr</th>
+                            <th class="px-2 py-4 text-xs font-bold">May</th>
+                            <th class="px-2 py-4 text-xs font-bold">Jun</th>
+                            <th class="px-2 py-4 text-xs font-bold">Jul</th>
+                            <th class="px-2 py-4 text-xs font-bold">Aug</th>
+                            <th class="px-2 py-4 text-xs font-bold">Sep</th>
+                            <th class="px-2 py-4 text-xs font-bold">Oct</th>
+                            <th class="px-2 py-4 text-xs font-bold">Nov</th>
+                            <th class="px-2 py-4 text-xs font-bold">Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-primary/5 dark:divide-white/10 text-primary/80 dark:text-white/80">
+                        <!-- Grapes -->
+                        <tr class="hover:bg-primary/5 transition-colors">
+                            <td class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">Grapes</td>
+                            <td></td><td></td><td></td><td></td>
+                            <td class="bg-accent/20"><span class="hidden">May</span></td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Jun</td>
+                            <td class="bg-accent/20"><span class="hidden">Jul</span></td>
+                            <td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <!-- Strawberries -->
+                        <tr class="hover:bg-primary/5 transition-colors">
+                            <td class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">Strawberries</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
+                            <td class="bg-accent/20"><span class="hidden">Feb</span></td>
+                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            <td class="bg-accent/20"><span class="hidden">Nov</span></td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
+                        </tr>
+                        <!-- Green Peas -->
+                        <tr class="hover:bg-primary/5 transition-colors">
+                            <td class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">Green Peas</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
+                            <td class="bg-accent/20"><span class="hidden">Feb</span></td>
+                            <td class="bg-accent/20"><span class="hidden">Mar</span></td>
+                            <td class="bg-accent/20"><span class="hidden">Apr</span></td>
+                            <td></td><td></td><td></td><td></td><td></td>
+                            <td class="bg-accent/20"><span class="hidden">Oct</span></td>
+                            <td class="bg-accent/20"><span class="hidden">Nov</span></td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
+                        </tr>
+                         <!-- Spring Onions -->
+                         <tr class="hover:bg-primary/5 transition-colors">
+                            <td class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">Spring Onions</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Feb</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Mar</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Apr</td>
+                            <td></td><td></td><td></td><td></td><td></td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Oct</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Nov</td>
+                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Varietal Details -->
+    <section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+        <h2 class="serif-heading text-4xl font-bold mb-16 text-center">Varietal Details</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Grapes Detail -->
+            <div class="group bg-white dark:bg-white/5 rounded-[2rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('assets/grapes.jpg');"></div>
+                <div class="p-8 space-y-6">
+                    <div>
+                        <h3 class="serif-heading text-2xl font-bold">Table Grapes</h3>
+                        <p class="text-sm text-accent font-bold">Early Sweet, Sugraone</p>
+                    </div>
+                    <div class="space-y-4 text-sm text-primary/80 dark:text-white/80">
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Scientific Name</span>
+                            <span class="italic">Vitis vinifera</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Brix Level</span>
+                            <span>16° - 18° (Very Sweet)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Shelf Life</span>
+                            <span>4-6 Weeks (0°C)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strawberries Detail -->
+            <div class="group bg-white dark:bg-white/5 rounded-[2rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('assets/strawberries.jpg');"></div>
+                <div class="p-8 space-y-6">
+                    <div>
+                        <h3 class="serif-heading text-2xl font-bold">Strawberries</h3>
+                        <p class="text-sm text-accent font-bold">Fortuna, Festival</p>
+                    </div>
+                    <div class="space-y-4 text-sm text-primary/80 dark:text-white/80">
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Scientific Name</span>
+                            <span class="italic">Fragaria × ananassa</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Brix Level</span>
+                            <span>7° - 9° (Balanced)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Shelf Life</span>
+                            <span>7-10 Days (0°C)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peas Detail -->
+            <div class="group bg-white dark:bg-white/5 rounded-[2rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('assets/green-peas.jpg');"></div>
+                <div class="p-8 space-y-6">
+                    <div>
+                        <h3 class="serif-heading text-2xl font-bold">Green Peas</h3>
+                        <p class="text-sm text-accent font-bold">Sugar Snap, Snow Peas</p>
+                    </div>
+                    <div class="space-y-4 text-sm text-primary/80 dark:text-white/80">
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Scientific Name</span>
+                            <span class="italic">Pisum sativum</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Profile</span>
+                            <span>Crisp & Sweet</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Shelf Life</span>
+                            <span>10-14 Days (0°C)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-20 dark:bg-black/40">
+        <div class="mx-auto max-w-[1440px] px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.svg" alt="Nouranto Logo" class="h-12 w-auto">
+                </div>
+                <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+                    Pioneering Egyptian agriculture exports since 1944. Committed to sustainable farming and global food
+                    security.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Navigation</h6>
+                <ul class="space-y-4 text-sm font-medium text-white/70">
+                    <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white transition-colors" href="heritage.html">Our Heritage</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Farms</a></li>
+                    <li><a class="hover:text-white transition-colors" href="packhouse.html">Packing Facilities</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Export Logistics</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Headquarters</h6>
+                <address class="not-italic space-y-4 text-sm font-medium text-white/70">
+                    <p class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">location_on</span>
+                        11 El Gazayer Street,<br />
+                        Aswan Square, Mohandseen<br />
+                        Cairo, Egypt
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">call</span>
+                        +20 2 2736 1234
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-muted-gold text-lg">mail</span>
+                        info@nouranto.com
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h6 class="text-muted-gold font-bold uppercase tracking-widest text-xs mb-8">Global Reach</h6>
+                <div class="rounded-xl overflow-hidden grayscale border border-white/10 opacity-50">
+                    <div class="h-32 bg-center bg-cover" data-alt="Simplified world map with export routes"
+                        style="background-image: url('assets/map-background.jpg');">
+                    </div>
+                </div>
+                <p class="text-[10px] text-white/30 mt-4 leading-tight uppercase tracking-widest font-bold">Shipping to
+                    24+ Countries across Europe &amp; MENA</p>
+            </div>
+        </div>
+        <div
+            class="mx-auto max-w-[1440px] px-6 lg:px-20 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+            <p>© 2024 Nouranto Export. All Rights Reserved.</p>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                <a href="#" class="py-2 md:py-0">Privacy Policy</a>
+                <a href="#" class="py-2 md:py-0">Terms of Trade</a>
+                <a href="#" class="py-2 md:py-0">Traceability Portal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
