@@ -115,7 +115,7 @@ All packaging materials are selected based on:
 
 **Mange tout / Sugarsnaps: November- May**
 
-**Spring Onions: October- April**
+**Spring Onions: December- March**
 
 **Strawberries: November- February**
 
