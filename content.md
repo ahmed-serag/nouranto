@@ -113,7 +113,7 @@ All packaging materials are selected based on:
 
 **Green beans: October- July**
 
-**Mange tout / Sugarsnaps: November- May**
+**Green Peas: November- May**
 
 **Spring Onions: December- March**
 
