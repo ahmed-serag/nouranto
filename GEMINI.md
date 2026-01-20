@@ -17,9 +17,9 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 *   `packhouse.html`: Details on the packhouse facilities, cold chain technology, logistics (Nouranto Cargo), and packaging specifications.
 *   `products.html`: A comprehensive product portfolio with an interactive crop calendar and detailed varietal information.
 *   `contact.html`: A specialized B2B inquiry page with a detailed procurement form.
-*   `DESIGN_SYSTEM.md`: Documentation of the visual style, color palette, and typography.
+*   `DESIGN_SYSTEM.md`: **CRITICAL REFERENCE**. Must be followed for all visual and UI changes.
 *   `AGENTS.md`: **CRITICAL**. Specific instructions for AI agents regarding workflow, issue tracking, and git operations.
-*   `content.md`: Source of truth for website copy and business details.
+*   `content.md`: **CRITICAL REFERENCE**. Source of truth for all website copy and business details. Must be consulted for any content updates.
 *   `Product Portfolio prompts.md`: Detailed specifications for the product portfolio page.
 *   `.beads/`: Directory for Beads configuration and issue database.
 
@@ -27,8 +27,10 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 *   **Founding:** Founded by Khaled ElMeligy in 1988 as a family business.
 *   **Location:** 11 El Gazayer Street, Aswan Square, Mohandseen, Cairo, Egypt.
 *   **Operations:** Controls the entire supply chain from 6 strategic farms to advanced packing stations.
-*   **Products:** Green beans, Mange tout / Sugarsnaps, Spring Onions, Strawberries, Grapes, and Iceberg Lettuce.
+*   **Products:** Green beans, Mange tout / Sugarsnaps, Spring Onions, Strawberries, and Grapes.
 *   **Compliance:** Certified for Global GAP, GRASP, SPRING, BRC, and SEDEX.
 
 ## Development Workflow
 AI agents **MUST** follow the mandated workflow in `AGENTS.md`, including using `bd` for task management and ensuring all changes are pushed to the remote repository at the end of every session.
+
+**Note for AI Agents:** You MUST reference `@DESIGN_SYSTEM.md` for any visual or stylistic changes and `@content.md` for any text or business logic updates in all your thinking and planning processes.

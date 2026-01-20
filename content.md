@@ -121,7 +121,7 @@ All packaging materials are selected based on:
 
 **Grapes:May- July**
 
-**Iceberg: November- May**
+
 
 **Contact us:**
 
