@@ -34,7 +34,7 @@ Create distinct, deep-dive sections with the following data:
     * **Scientific Name:** *Vitis vinifera*
     * **Brix Level:** High sweetness profile, ranging from **16° to 20°+**.
     * **Flavor Profile:** Early Sweet features a unique light Muscat flavor; Sugraone is sweet-neutral and crunchy.
-    * **Shelf Life:** **45–60 days** with SO2 pads and managed cold chain.
+    * **Shelf Life:** **45–60 days** with SO2 pads and managed Cool Chain.
     * **Berry Size:** 16mm – 22mm+.
 
 * **Category 2: Strawberries (Fortuna)**
@@ -48,7 +48,7 @@ Create distinct, deep-dive sections with the following data:
     * **Scientific Name:** *Pisum sativum var. macrocarpon*
     * **Brix Level:** Characterized by high natural sugars and fiberless, tender pods.
     * **Shelf Life:** **7–10 days** from harvest to retail.
-    * **Cold Chain:** Must be stored as close to **0°C** as possible to maintain tenderness.
+    * **Cool Chain:** Must be stored as close to **0°C** as possible to maintain tenderness.
 
 * **Category 4: Green Beans (Fine & Extra Fine)**
     * **Scientific Name:** *Phaseolus vulgaris*
