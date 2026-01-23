@@ -106,128 +106,195 @@
     <!-- Crop Calendar -->
     <section class="py-24 bg-white dark:bg-white/5 border-y border-primary/5">
         <div class="mx-auto max-w-[1440px] px-6 lg:px-20">
-            <div class="text-center mb-16 space-y-4">
-                <h2 class="serif-heading text-4xl font-bold">Crop Calendar</h2>
-                <p class="text-primary/60 dark:text-white/60 max-w-2xl mx-auto">
-                    Plan your procurement with our harvest schedule.
-                </p>
-            </div>
+            <!-- Visual Crop Calendar -->
+            <div class="space-y-12">
+                <div class="text-center space-y-4">
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary/5 dark:bg-white/5 px-4 py-2 rounded-full mb-4">
+                        <span class="material-symbols-outlined text-accent text-lg">calendar_month</span>
+                        <span
+                            class="text-xs font-bold uppercase tracking-widest text-primary/70 dark:text-white/70">Harvest
+                            Cycles</span>
+                    </div>
+                    <h2 class="serif-heading text-4xl md:text-5xl font-bold text-primary dark:text-white">Crop Calendar
+                    </h2>
+                    <p class="text-lg text-primary/60 dark:text-white/60 max-w-2xl mx-auto">
+                        Strategic growing cycles across our 6 farms ensure a consistent supply of premium Egyptian
+                        produce.
+                    </p>
+                </div>
 
-            <!-- Calendar Grid -->
-            <div class="overflow-x-auto rounded-3xl shadow-xl border border-primary/5 bg-white dark:bg-background-dark">
-                <table class="w-full text-center">
-                    <thead class="bg-primary text-white">
-                        <tr>
-                            <th
-                                class="px-6 py-4 text-left font-bold uppercase tracking-wider sticky left-0 bg-primary z-10">
-                                Crop</th>
-                            <th class="px-2 py-4 text-xs font-bold">Jan</th>
-                            <th class="px-2 py-4 text-xs font-bold">Feb</th>
-                            <th class="px-2 py-4 text-xs font-bold">Mar</th>
-                            <th class="px-2 py-4 text-xs font-bold">Apr</th>
-                            <th class="px-2 py-4 text-xs font-bold">May</th>
-                            <th class="px-2 py-4 text-xs font-bold">Jun</th>
-                            <th class="px-2 py-4 text-xs font-bold">Jul</th>
-                            <th class="px-2 py-4 text-xs font-bold">Aug</th>
-                            <th class="px-2 py-4 text-xs font-bold">Sep</th>
-                            <th class="px-2 py-4 text-xs font-bold">Oct</th>
-                            <th class="px-2 py-4 text-xs font-bold">Nov</th>
-                            <th class="px-2 py-4 text-xs font-bold">Dec</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-primary/5 dark:divide-white/10 text-primary/80 dark:text-white/80">
-                        <!-- Green Beans: Oct - July -->
-                        <tr class="hover:bg-primary/5 transition-colors">
-                            <td
-                                class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">
-                                Green Beans</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Feb</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Mar</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Apr</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">May</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jun</td>
-                            <td class="bg-accent/20"><span class="hidden">Jul</span></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bg-accent/20"><span class="hidden">Oct</span></td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Nov</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
-                        </tr>
-                        <!-- Grapes: May - July -->
-                        <tr class="hover:bg-primary/5 transition-colors">
-                            <td
-                                class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">
-                                Table Grapes</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bg-accent/20"><span class="hidden">May</span></td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jun</td>
-                            <td class="bg-accent/20"><span class="hidden">Jul</span></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <!-- Strawberries: Nov - Feb -->
-                        <tr class="hover:bg-primary/5 transition-colors">
-                            <td
-                                class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">
-                                Strawberries</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
-                            <td class="bg-accent/20"><span class="hidden">Feb</span></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bg-accent/20"><span class="hidden">Nov</span></td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
-                        </tr>
-                        <!-- Spring Onions: Dec - March -->
-                        <tr class="hover:bg-primary/5 transition-colors">
-                            <td
-                                class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">
-                                Spring Onions</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Feb</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Mar</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
-                        </tr> <!-- Green Peas: Nov - May -->
-                        <tr class="hover:bg-primary/5 transition-colors">
-                            <td
-                                class="px-6 py-4 text-left font-bold sticky left-0 bg-white dark:bg-background-dark z-10">
-                                Green Peas</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Jan</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Feb</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Mar</td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Apr</td>
-                            <td class="bg-accent/20"><span class="hidden">May</span></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bg-accent/20"><span class="hidden">Nov</span></td>
-                            <td class="bg-accent text-white font-bold rounded-sm">Dec</td>
-                        </tr>
+                <div class="space-y-4">
+                    <!-- Green Beans -->
+                    <div
+                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Green
+                                    Beans</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">Oct — July</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <!-- Jan-Dec blocks -->
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Jan</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Feb</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Mar</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Apr</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">May</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Jun</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Jul</span>
+                                </div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Aug</span>
+                                </div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Sep</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Oct</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Nov</span>
+                                </div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"><span
+                                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-40">Dec</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    </tbody>
-                </table>
+                    <!-- Table Grapes -->
+                    <div
+                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Table
+                                    Grapes</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">May — July</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strawberries -->
+                    <div
+                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">
+                                    Strawberries</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">Nov — Feb</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spring Onions -->
+                    <div
+                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Spring
+                                    Onions</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">Dec — March</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Green Peas -->
+                    <div
+                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Green
+                                    Peas</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">Nov — May</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
