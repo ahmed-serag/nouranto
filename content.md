@@ -121,6 +121,8 @@ All packaging materials are selected based on:
 
 **Grapes:May- July**
 
+**Iceberg Lettuce:November- May**
+
 
 
 **Contact us:**

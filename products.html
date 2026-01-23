@@ -267,12 +267,37 @@
                     </div>
 
                     <!-- Green Peas -->
-                    <div
-                        class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                    <div class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
                         <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
                             <div>
-                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Green
-                                    Peas</h3>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Green Peas</h3>
+                                <div class="flex items-center gap-2 text-accent">
+                                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-bold uppercase tracking-wider">Nov — May</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 h-12">
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-primary/5 dark:bg-white/5 rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                                <div class="flex-1 bg-accent rounded-md group/month relative"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iceberg Lettuce -->
+                    <div class="group bg-white dark:bg-white/5 border border-primary/10 dark:border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/30 transition-all duration-300">
+                        <div class="grid md:grid-cols-[240px_1fr] gap-8 items-center">
+                            <div>
+                                <h3 class="serif-heading text-2xl font-bold text-primary dark:text-white mb-1">Iceberg Lettuce</h3>
                                 <div class="flex items-center gap-2 text-accent">
                                     <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
                                     <span class="text-xs font-bold uppercase tracking-wider">Nov — May</span>
@@ -301,7 +326,16 @@
 
     <!-- Varietal Details -->
     <section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
-        <h2 class="serif-heading text-4xl font-bold mb-16 text-center">Varietal Details</h2>
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div class="space-y-4">
+                <h2 class="serif-heading text-4xl font-bold">Varietal Details</h2>
+                <p class="text-primary/60 dark:text-white/60 max-w-lg font-medium">Detailed specifications for our premium export-grade produce.</p>
+            </div>
+            <a class="text-accent font-bold flex items-center gap-2 hover:gap-4 transition-all group" href="assets/Product Catalog.pdf" download>
+                Download Product Catalog
+                <span class="material-symbols-outlined">download</span>
+            </a>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Green Beans Detail -->
@@ -441,6 +475,33 @@
                 </div>
             </a>
 
+            <!-- Iceberg Lettuce Detail -->
+            <a href="products/iceberg-lettuce.html"
+                class="block group bg-white dark:bg-white/5 rounded-[2rem] overflow-hidden shadow-xl border border-primary/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-64 bg-cover bg-center"
+                    style="background-image: url('assets/products-images/iceberg.jpg');"></div>
+                <div class="p-8 space-y-6">
+                    <div>
+                        <h3 class="serif-heading text-2xl font-bold">Iceberg Lettuce</h3>
+                        <p class="text-sm text-accent font-bold">Premium Crisphead</p>
+                    </div>
+                    <div class="space-y-4 text-sm text-primary/80 dark:text-white/80">
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Scientific Name</span>
+                            <span class="italic">Lactuca sativa</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Profile</span>
+                            <span>Crisp & Refreshing</span>
+                        </div>
+                        <div class="flex justify-between border-b border-primary/10 dark:border-white/10 pb-2">
+                            <span class="font-bold text-primary/60 dark:text-white/60">Shelf Life</span>
+                            <span>21-28 Days (0°C)</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
 
         </div>
     </section>
@@ -486,10 +547,7 @@
                         Aswan Square, Mohandseen<br />
                         Cairo, Egypt
                     </p>
-                    <p class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-muted-gold text-lg">call</span>
-                        +20 2 2736 1234
-                    </p>
+
                     <p class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-muted-gold text-lg">mail</span>
                         info@nouranto.com
