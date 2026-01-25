@@ -156,11 +156,13 @@
                             <select id="product" name="product"
                                 class="w-full bg-background-light dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-accent transition-all">
                                 <option value="">Select a product</option>
-                                <option value="grapes">Table Grapes</option>
-                                <option value="strawberries">Strawberries</option>
-                                <option value="spring-onions">Spring Onions</option>
-                                <option value="green-peas">Green Peas</option>
-                                <option value="other">Other</option>
+                                <option value="Green Beans">Green Beans</option>
+                                <option value="Table Grapes">Table Grapes</option>
+                                <option value="Strawberries">Strawberries</option>
+                                <option value="Spring Onions">Spring Onions</option>
+                                <option value="Green Peas">Green Peas</option>
+                                <option value="Iceberg Lettuce">Iceberg Lettuce</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                         <div class="space-y-2">
@@ -265,6 +267,39 @@
     </footer>
 
     <script src="assets/scripts.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const product = document.getElementById('product').value;
+            const port = document.getElementById('port').value;
+            const volume = document.getElementById('volume').value;
+            const subjectInput = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const subject = subjectInput ? `Inquiry: ${subjectInput}` : 'New Business Inquiry - Nouranto';
+
+            const body = `Inquiry Details:
+------------------
+Name: ${name}
+Email: ${email}
+Product of Interest: ${product || 'Not Specified'}
+Destination Port: ${port || 'Not Specified'}
+Volume Required: ${volume || 'Not Specified'}
+
+Message:
+${message}
+
+------------------
+Sent from Nouranto B2B Portal`;
+
+            const mailtoUrl = `mailto:info@nouranto.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoUrl;
+        });
+    </script>
 </body>
 
 </html>

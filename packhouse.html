@@ -86,17 +86,24 @@
     </header>
 
     <!-- Packhouse Hero -->
-    <section class="relative px-6 py-16 lg:px-20 lg:py-32 max-w-[1440px] mx-auto overflow-hidden">
-        <div class="max-w-4xl mx-auto text-center space-y-8">
+    <!-- Packhouse Hero -->
+    <section class="relative px-6 py-16 lg:px-20 lg:py-32 overflow-hidden">
+        <!-- Background with Overlay -->
+        <div class="absolute inset-0">
+            <img src="assets/products-images/packhouse.jpg" alt="Packhouse Facility" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-primary/80 dark:bg-black/80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
             <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider">
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wider">
                 <span class="material-symbols-outlined text-sm">conveyor_belt</span>
                 Precision Logistics
             </div>
-            <h1 class="serif-heading text-5xl lg:text-7xl font-bold text-primary dark:text-white leading-tight">
+            <h1 class="serif-heading text-5xl lg:text-7xl font-bold text-white leading-tight">
                 The Packhouse & <br /><span class="text-accent italic">Cool Chain.</span>
             </h1>
-            <p class="text-xl text-primary/70 dark:text-white/70 leading-relaxed max-w-3xl mx-auto">
+            <p class="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
                 Where nature meets technology. Our advanced facilities ensure every harvest retains its farm-fresh
                 quality through rigorous sorting, cooling, and packing protocols.
             </p>
@@ -116,8 +123,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Packhouse 1 -->
-                <div class="group relative overflow-hidden rounded-[2rem] bg-cover bg-center text-white p-10 flex flex-col justify-between min-h-[320px] shadow-xl transition-all duration-500 hover:-translate-y-2"
-                    style="background-image: url('assets/products-images/packhouse.jpg');">
+                <div
+                    class="group relative overflow-hidden rounded-[2rem] bg-cover bg-center text-white p-10 flex flex-col justify-between min-h-[320px] shadow-xl transition-all duration-500 hover:-translate-y-2">
                     <div
                         class="absolute inset-0 bg-primary/80 group-hover:bg-primary/70 transition-colors duration-500">
                     </div>
@@ -137,8 +144,8 @@
                 </div>
 
                 <!-- Packhouse 2 -->
-                <div class="group relative overflow-hidden rounded-[2rem] bg-cover bg-center text-white p-10 flex flex-col justify-between min-h-[320px] shadow-xl transition-all duration-500 hover:-translate-y-2"
-                    style="background-image: url('assets/products-images/packhouse-2.jpg');">
+                <div
+                    class="group relative overflow-hidden rounded-[2rem] bg-cover bg-center text-white p-10 flex flex-col justify-between min-h-[320px] shadow-xl transition-all duration-500 hover:-translate-y-2">
                     <div
                         class="absolute inset-0 bg-primary/80 group-hover:bg-primary/70 transition-colors duration-500">
                     </div>
@@ -173,7 +180,7 @@
                     <h2 class="serif-heading text-4xl lg:text-5xl font-bold">Our QA System</h2>
                     <p class="text-lg text-white/80 leading-relaxed">
                         A rigorous, multi-stage quality control system ensuring excellence, safety, and compliance from
-                        harvest to export.
+                        harvest to your doorsteps.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                         <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
@@ -219,7 +226,7 @@
     <!-- Food-Safe Packaging Standards -->
     <section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto border-t border-primary/5">
         <div class="max-w-4xl mx-auto text-center mb-16 space-y-4">
-            <h2 class="serif-heading text-4xl font-bold">Food-Safe Packaging Standards</h2>
+            <h2 class="serif-heading text-4xl font-bold">Food-safety Packaging Standards</h2>
             <p class="text-lg text-primary/70 dark:text-white/70">
                 All packaging materials are selected based on food safety and hygiene requirements.
             </p>
