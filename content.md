@@ -4,7 +4,7 @@ Website content
 
 *Goal: Strong, bold, reflecting history, reliability, and core values.*
 
-**Headline:** **Reliability since 1988\. Enhancing trust and delivering excellence to the world.**
+**Headline:** **Reliability since 1989\. Enhancing trust and delivering excellence to the world.**
 
 **Subheadline:** From the heart of Egypt’s fertile lands to the global sphere, we’ve built the bridge between our ancestors and the future. Founded by Khaled ElMeligy, we’ve evolved from family growers into fully accredited leading packers and exporters. We guarantee premium quality, traceability, and unwavering reliability in every delivery abiding by global compliances and top international standards. Taking challenges has always been the key to our success, and innovation is the key to our future. 
 
@@ -16,7 +16,7 @@ Website content
 
 **Rooted in Egypt. Certified for the World.**
 
-**Our company has long standing roots in the agricultural field, enriched with more than 70 years of experience in growing. Our journey from local growers to international exporters was forged through resilience. In 1988, Khaled El Meligy, founder of Nouranto, has led and managed the company since then as a reputable family business.**
+**Our company has long standing roots in the agricultural field, enriched with more than 70 years of experience in growing. Our journey from local growers to international exporters was forged through resilience. In 1989, Khaled El Meligy, founder of Nouranto, has led and managed the company since then as a reputable family business.**
 
 **With the saddening news of the passing away of Khaled by the end of 2025, his legacy remains engraved in every person and part of our Nouranto family. **
 

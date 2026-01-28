@@ -1,7 +1,7 @@
 # Nouranto Project Context
 
 ## Project Overview
-This repository contains a high-fidelity prototype for **Nouranto**, a premium Egyptian agriculture export company with a heritage dating back to 1988 (roots extending over 70 years). The project demonstrates a "bold minimalist" web design using HTML and Tailwind CSS, and utilizes **Beads (`bd`)** for AI-native issue tracking.
+This repository contains a high-fidelity prototype for **Nouranto**, a premium Egyptian agriculture export company with a heritage dating back to 1989 (roots extending over 70 years). The project demonstrates a "bold minimalist" web design using HTML and Tailwind CSS, and utilizes **Beads (`bd`)** for AI-native issue tracking.
 
 ## Technology Stack
 *   **Frontend:** HTML5, Tailwind CSS (via CDN), Google Fonts, Google Material Symbols.
@@ -24,7 +24,7 @@ This repository contains a high-fidelity prototype for **Nouranto**, a premium E
 *   `.beads/`: Directory for Beads configuration and issue database.
 
 ## Business Context (from `content.md`)
-*   **Founding:** Founded by Khaled ElMeligy in 1988 as a family business.
+*   **Founding:** Founded by Khaled ElMeligy in 1989 as a family business.
 *   **Location:** 11 El Gazayer Street, Aswan Square, Mohandseen, Cairo, Egypt.
 *   **Operations:** Controls the entire supply chain from 6 strategic farms to advanced packing stations.
 *   **Products:** Green beans, Mange tout / Sugarsnaps, Spring Onions, Strawberries, and Grapes.
