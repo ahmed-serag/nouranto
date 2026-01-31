@@ -60,7 +60,7 @@ The typography pairs a modern sans-serif for readability with a classic serif fo
 *   **Padding:** `px-6 lg:px-20` (Standard horizontal padding)
 *   **Grid Columns:**
     *   `grid-cols-1 lg:grid-cols-12` (Hero)
-    *   `grid-cols-1 md:grid-cols-2 lg:grid-cols-4` (Products, Footer)
+    *   `grid-cols-1 md:grid-cols-2 lg:grid-cols-3` (Products, Footer)
 
 ### Responsiveness
 *   **Mobile First:** Default classes are for mobile.
